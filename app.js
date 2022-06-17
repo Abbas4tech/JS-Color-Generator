@@ -1,6 +1,6 @@
 const body = document.getElementById("root");
 const displayText = document.getElementById("color-text");
-const pallete = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "a", "b", "c", "d", "e", "f"];
+const palette = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "a", "b", "c", "d", "e", "f"];
 const colorGenerator = (arr, mode = 6) => {
   const color = arr
     .map((e) => ({ e, sortkey: Math.random() }))
@@ -14,4 +14,4 @@ const colorGenerator = (arr, mode = 6) => {
 };
 document
   .getElementById("genBtn")
-  .addEventListener("click", () => colorGenerator(pallete));
+  .addEventListener("click", () => colorGenerator(palette));
